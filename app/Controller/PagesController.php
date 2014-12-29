@@ -37,6 +37,10 @@ class PagesController extends AppController {
  */
 	public $uses = array();
 
+	public $helpers = array('Html', 'Form', 'Session');
+
+    public $components = array('Session');
+
 /**
  * Displays a view
  *
@@ -73,4 +77,6 @@ class PagesController extends AppController {
 			throw new NotFoundException();
 		}
 	}
+
+
 }
